@@ -15,7 +15,7 @@ A tidy dataset dataset.txt - output file from step 5
 It assumes that the reader is aware of the course project and the original datasets involved.
 Also assumed that the dataset zip file is extracted into your workspace. So you would have "workspace/UCI HAR Dataset" and its contents
 
-### high level process conducted to clean up the data and make it tidy
+## High level process conducted to clean up the data and make it tidy
 1. Read all test/X_test.txt,  test/y_test.txt, test/subject_test.txt
 2. Merge all the three by column wise
 3. Similarly the train files
@@ -28,7 +28,7 @@ Also assumed that the dataset zip file is extracted into your workspace. So you 
 10. Using the reshape2 package calculate the average of each variable for each activity and each subject
 11. Write the result to dataset.txt
 
-#The Following is the R-script code with comments
+##The Following is the R-script code with comments
 
 ## Read all three test data
 xtest.data <-read.table("UCI HAR Dataset/test/X_test.txt", numerals = "no.loss")
