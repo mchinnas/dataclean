@@ -1,11 +1,11 @@
 ##Code Book for the Data Cleaning project
 
-This code book describes two tidy datasets created by the run_analysis.R script. 
+This code book describes the tidy dataset created by the run_analysis.R script. 
 
-The dataset.txt is the tidy data set derived from step 4 by calculating the average of each variable for each activity and each subject
+The dataset.txt is the tidy data set derived from step 5 by calculating the average of each variable for each activity and each subject
 
-dataset.txt
-============
+The tidy dataset.txt
+====================
 
 subject - suject is the person who carried the experiments - valid values are integer and ranges from 1 to 30. 
 This column is orginally from subject_train.txt/subject_test.txt dataset                      
@@ -28,6 +28,7 @@ There are 180 rows in the dataset. That is 6 activities * 30 subjects = 180 rows
 All these column values are numeric.
 
 The renamed columns are
+
 -tbodyaccmeanx
 -tbodyaccmeany               
 -tbodyaccmeanz            
@@ -105,6 +106,6 @@ The renamed columns are
 -fbodybodygyromagstd     
 -fbodybodygyromagmeanfreq    
 -fbodybodygyrojerkmagmean    
--fbodybodygyrojerkmagstd 
+-fbodybodygyrojerkmagstd
 -fbodybodygyrojerkmagmeanfreq
 

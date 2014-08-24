@@ -26,13 +26,15 @@ Also assumed that the dataset zip file is extracted into your workspace. So you 
 8. Extract only columns which has mean or std and drop the remaining columns.
 9. This script need the reshape2 packages apart from the standard packages
 10. Using the reshape2 package calculate the average of each variable for each activity and each subject
-11. Write the result to dataset2.txt
+11. Write the result to dataset.txt
 
 #The Following is the R-script code with comments
 
 ## Read all three test data
 xtest.data <-read.table("UCI HAR Dataset/test/X_test.txt", numerals = "no.loss")
+
 ytest.data <-read.table("UCI HAR Dataset/test/y_test.txt")
+
 subject.test.data <-read.table("UCI HAR Dataset/test/subject_test.txt")
 
 ## Change the variable name
@@ -44,11 +46,14 @@ test.data <- cbind(subject.test.data, ytest.data, xtest.data)
 
 ## Read all three training datasets
 xtrain.data <-read.table("UCI HAR Dataset/train/X_train.txt", numerals = "no.loss")
+
 ytrain.data <-read.table("UCI HAR Dataset/train/y_train.txt")
+
 subject.train.data <-read.table("UCI HAR Dataset/train/subject_train.txt")
 
 ## Change the variable names
 names(subject.train.data) <- c("subject")
+
 names(ytrain.data) <- c("activity")
 
 ## Merge all three training dataset by column wise
@@ -72,7 +77,9 @@ names(merged.data) <- final.headings
 
 ## Find out the columns which has mean or std and club together
 mean.columns <- as.vector(grep("mean", names(merged.data)))
+
 std.columns <- as.vector(grep("std", names(merged.data)))
+
 mean.std.columns <- append(mean.columns, std.columns)
 
 ## Add with the subject, activity columns
@@ -83,6 +90,7 @@ final.data <- merged.data[,sort(all.columns)]
 
 ## Read the activity label file and assign to the activity column in final.data
 activity.label.data <- read.table("UCI HAR Dataset/activity_labels.txt")
+
 final.data[,2] <- activity.label.data[final.data$activity,2]
 
 ## Remove the '-' and '()' symbols from the column headings
