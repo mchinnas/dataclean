@@ -69,12 +69,15 @@ tbodygyrojerkstdz
 tbodyaccmagmean             
 tbodyaccmagstd              
 tgravityaccmagmean 
+
 tgravityaccmagstd           
 tbodyaccjerkmagmean 
+
 tbodyaccjerkmagstd          
 tbodygyromagmean            
 tbodygyromagstd             
 tbodygyrojerkmagmean 
+
 tbodygyrojerkmagstd         
 fbodyaccmeanx            
 fbodyaccmeany               
@@ -89,11 +92,13 @@ fbodyaccjerkmeanx
 fbodyaccjerkmeany            
 fbodyaccjerkmeanz           
 fbodyaccjerkstdx 
+
 fbodyaccjerkstdy            
 fbodyaccjerkstdz             
 fbodyaccjerkmeanfreqx       
 fbodyaccjerkmeanfreqy        
 fbodyaccjerkmeanfreqz 
+
 fbodygyromeanx               
 fbodygyromeany              
 fbodygyromeanz               
@@ -109,10 +114,12 @@ fbodyaccmagmeanfreq
 fbodybodyaccjerkmagmean      
 fbodybodyaccjerkmagstd  
 fbodybodyaccjerkmagmeanfreq 
+
 fbodybodygyromagmean        
 fbodybodygyromagstd     
 fbodybodygyromagmeanfreq     
 fbodybodygyrojerkmagmean    
 fbodybodygyrojerkmagstd 
+
 fbodybodygyrojerkmagmeanfreq
 
